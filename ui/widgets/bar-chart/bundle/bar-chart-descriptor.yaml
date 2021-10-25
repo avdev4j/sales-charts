@@ -1,0 +1,6 @@
+code: bar-chart
+titles:
+  en: Bar chart MF
+  it: Bar chart MF
+group: free
+customUiPath: bar-chart-widget.ftl
