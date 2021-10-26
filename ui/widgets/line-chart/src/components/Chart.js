@@ -48,7 +48,8 @@ function mapDataToChartJs(payload) {
             {
                 label: payload.name,
                 data: chartData,
-                borderWidth: 2,
+                borderWidth: 1,
+                borderColor: 'rgb(0, 0, 0)',
                 backgroundColor: [CHART_COLORS.red, CHART_COLORS.orange, CHART_COLORS.yellow, CHART_COLORS.green, CHART_COLORS.blue, CHART_COLORS.purple, CHART_COLORS.grey]
             }
         ]
