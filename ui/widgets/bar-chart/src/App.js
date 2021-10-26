@@ -1,23 +1,30 @@
 import {getData} from "./integration/Integration";
-import {useState, useEffect} from "react";
-import {Chart} from "./components/Chart";
-
-let loaded = false;
+import {useState} from "react";
 
 function App() {
-    const [payload, setPayload] = useState({});
-
-    useEffect(async () => {
-        if(!loaded) {
-            setPayload((await getData()).data);
-            loaded = true;
+    const [payload, setPayload] = useState("")
+    async function callTheApi() {
+        const response = (await getData());
+        setPayload(response.data)
+    }
+    function _renderData(data) {
+       if(data) {
+            return Object.entries(data).map(([key,value])=>{
+              return (
+                  <div>{key} : {value.toString()}</div>
+              );
+            })
         }
-    });
+    }
 
     return (
         <>
             <div>
-                <Chart payload={payload} />
+                <button onClick={callTheApi}>call the api</button>
+            </div>
+            <div>
+                <span>{payload.name}</span>
+                <span>{_renderData(payload.data)}</span>
             </div>
         </>
     )
