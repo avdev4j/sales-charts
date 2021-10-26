@@ -1,8 +1,6 @@
 code: contribution-charts
 description: App to report contributions on GitHub for the CodeMotion presentation
 components:
-  plugins:
-    - plugins/entando-contributionReporter-plugin.yaml
   widgets:
-    - ui/widgets/widgets-dir/et-widget/et-widget-descriptor.yaml
-
+    - ui/widgets/charts/bar-chart/bar-chart-descriptor.yaml
+    - ui/widgets/charts/line-chart/line-chart-descriptor.yaml
