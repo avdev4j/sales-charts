@@ -1,4 +1,4 @@
-code: contribution-reporter
+code: contribution-charts
 description: App to report contributions on GitHub for the CodeMotion presentation
 components:
   plugins:
