@@ -1,6 +1,0 @@
-code: line-chart
-titles:
-  en: Line chart MF
-  it: Line chart MF
-group: free
-customUiPath: line-chart-widget.ftl

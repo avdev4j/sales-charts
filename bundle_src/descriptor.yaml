@@ -3,4 +3,3 @@ description: App to display sales made by My Company with charts. Sample app for
 components:
   widgets:
     - ui/widgets/charts/bar-chart/bar-chart-descriptor.yaml
-    - ui/widgets/charts/line-chart/line-chart-descriptor.yaml
