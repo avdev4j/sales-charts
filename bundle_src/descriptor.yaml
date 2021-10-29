@@ -1,5 +1,5 @@
-code: contribution-charts
-description: App to report contributions on GitHub for the CodeMotion presentation
+code: sales-charts
+description: App to display sales made by My Company with charts. Sample app for the CodeMotion live talk.
 components:
   widgets:
     - ui/widgets/charts/bar-chart/bar-chart-descriptor.yaml
